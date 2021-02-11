@@ -1,6 +1,6 @@
 import { isLowerCase } from "./lower-case.validator";
 
-fdescribe('Teste para a função isLowerCase',() =>{
+describe('Teste para a função isLowerCase',() =>{
 
     it( 'Deve confirmar quando recebe um texto em caixa baixa', () =>{
 
