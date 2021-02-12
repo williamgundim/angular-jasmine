@@ -4,7 +4,7 @@ import { of } from "rxjs";
 import { UserService } from "../user/user.service";
 import { FooterComponent } from "./footer.component";
 
-fdescribe("Testes para o componente Footer", () =>{
+describe("Testes para o componente Footer", () =>{
 
     let component:FooterComponent;
 
