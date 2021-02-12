@@ -4,7 +4,7 @@ import { AuthService } from "./auth.service";
 import { HttpClientTestingModule, HttpTestingController } from "@angular/common/http/testing"
 import { UserService } from "../user/user.service";
 
-fdescribe('Testes para serviço de autenticação', ()=> {
+describe('Testes para serviço de autenticação', ()=> {
 
     let authObj: AuthService;
     let httpMock: HttpTestingController;
