@@ -1,3 +1,4 @@
+import { TestBed } from "@angular/core/testing"
 import { TokenService } from "../token/token.service"
 import { UserService } from "./user.service"
 
@@ -8,8 +9,13 @@ describe('Testes para o serviço de usuário', () =>{
 
     beforeEach(()=> {
 
-        tokenService = new TokenService();
-        service = new UserService(tokenService);
+        TestBed.configureTestingModule({
+            providers: [
+                UserService
+            ]
+        });
+
+        service = TestBed.get(UserService);
 
     })
 
@@ -17,9 +23,7 @@ describe('Testes para o serviço de usuário', () =>{
         expect(service).toBeTruthy();
     })
 
-    it('deve com um token, recuperar as informações do usuário', ()=>{
-
-        
+    it('deve com um token, recuperar as informações do usuário', ()=>{   
 
     })
 
